@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Quality Roofing LLC - Meta Lead Gen Ad Concepts</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+    :root {
+      --bg-color: #0b0f14;
+      --card-bg: #121820;
+      --card-border: #1e2633;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent-yellow: #f59e0b;
+      --accent-green: #10b981;
+      --accent-blue: #38bdf8;
+      --tag-bg: #1e293b;
+      --meta-feed-bg: #18191a;
+      --meta-btn-bg: #3a3b3c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.5;
+      padding: 40px 24px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    .top-eyebrow {
+      color: var(--accent-yellow);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .top-channel {
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .main-title {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .subtitle-badge {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-yellow);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .brand-quote {
+      font-size: 15px;
+      color: #cbd5e1;
+      border-left: 3px solid var(--accent-yellow);
+      padding-left: 14px;
+      margin-bottom: 24px;
+      max-width: 900px;
+      line-height: 1.6;
+    }
+
+    /* Meta Details Bar */
+    .campaign-info-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-bottom: 32px;
+      gap: 16px;
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+    }
+
+    .info-val {
+      font-size: 13px;
+      font-weight: 600;
+      color: #f8fafc;
+      margin-top: 2px;
+    }
+
+    /* Strategy Subheader */
+    .section-headline {
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section-intro {
+      font-size: 14px;
+      color: #94a3b8;
+      max-width: 950px;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    /* Ad Concept Rows */
+    .concept-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    .concept-header {
+      background: #161e29;
+      border-bottom: 1px solid var(--card-border);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .concept-id-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-yellow);
+    }
+
+    .concept-name-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .concept-body {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 28px;
+      padding: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .concept-body { grid-template-columns: 1fr; }
+    }
+
+    /* Left Column: Simulated Mobile Ad Preview */
+    .mock-phone {
+      background: var(--meta-feed-bg);
+      border: 1px solid #2d3238;
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mock-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      gap: 10px;
+    }
+
+    .mock-avatar {
+      width: 32px;
+      height: 32px;
+      background: #047857;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 11px;
+      color: #fff;
+    }
+
+    .mock-page-title {
+      font-weight: 600;
+      color: #e4e6eb;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .mock-sponsored {
+      font-size: 10px;
+      color: #b0b3b8;
+    }
+
+    .mock-primary-text {
+      padding: 0 12px 10px 12px;
+      color: #e4e6eb;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .mock-image-container {
+      width: 100%;
+      height: 180px;
+      background: #1e242b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #2d3238;
+      border-bottom: 1px solid #2d3238;
+      position: relative;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .mock-img-icon {
+      font-size: 24px;
+      margin-bottom: 6px;
+      opacity: 0.8;
+    }
+
+    .mock-img-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #f8fafc;
+    }
+
+    .mock-img-sub {
+      font-size: 11px;
+      color: var(--accent-yellow);
+      margin-top: 2px;
+    }
+
+    .mock-footer {
+      background: #242526;
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mock-meta-titles {
+      flex: 1;
+      padding-right: 8px;
+    }
+
+    .mock-source {
+      font-size: 9px;
+      text-transform: uppercase;
+      color: #b0b3b8;
+      letter-spacing: 0.5px;
+    }
+
+    .mock-hl {
+      font-size: 12px;
+      font-weight: 700;
+      color: #e4e6eb;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .mock-btn {
+      background: var(--meta-btn-bg);
+      color: #e4e6eb;
+      font-weight: 600;
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #4e4f50;
+      white-space: nowrap;
+    }
+
+    /* Right Column: Copywriting & Specs */
+    .specs-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .field-row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .field-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent-yellow);
+      letter-spacing: 1px;
+    }
+
+    .field-content {
+      font-size: 13.5px;
+      color: #e2e8f0;
+      line-height: 1.55;
+    }
+
+    .field-pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .field-pill {
+      background: var(--tag-bg);
+      border: 1px solid #334155;
+      padding: 3px 9px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .why-box {
+      background: #0e1726;
+      border-left: 3px solid #38bdf8;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      font-size: 12.5px;
+      color: #93c5fd;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+
+    .why-label {
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin-bottom: 2px;
+      color: #38bdf8;
+      display: block;
+    }
+
+    /* Bottom Recommendations Section */
+    .recs-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 36px;
+    }
+
+    .recs-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent-yellow);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .recs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      list-style: none;
+    }
+
+    .recs-item {
+      position: relative;
+      padding-left: 20px;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .recs-item::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--accent-yellow);
+      font-weight: bold;
+    }
+
+    .footer-stamp {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--card-border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #64748b;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Branding Eyebrows -->
+    <div class="top-eyebrow">The Performance System</div>
+    <div class="top-channel">Facebook & Instagram Lead Ads</div>
+    <h1 class="main-title">Apex Quality Roofing LLC</h1>
+    <div class="subtitle-badge">Lead Gen Ad Concepts</div>
+
+    <!-- Agency Quote/Hook -->
+    <p class="brand-quote">
+      <strong>"Your Locally Trusted Roofing Contractor."</strong> Apex Quality Roofing LLC brings years of trusted residential and commercial roofing installation, replacement, and storm repairs to Wenatchee, Chelan, Leavenworth, Manson, and Central Washington. Fully licensed, bonded, insured, and BBB Accredited, backed by local crews who know Wenatchee Valley winters and summer heat.
+    </p>
+
+    <!-- Campaign Header Meta Bar -->
+    <div class="campaign-info-bar">
+      <div class="info-item">
+        <span class="info-label">Client</span>
+        <span class="info-val">Apex Quality Roofing LLC</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Objective</span>
+        <span class="info-val">Instant Form Leads</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Market</span>
+        <span class="info-val">Wenatchee & Central WA</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Date</span>
+        <span class="info-val">September 2026</span>
+      </div>
+    </div>
+
+    <!-- Strategy Subheading -->
+    <div class="section-headline">Five Concepts, Five Angles</div>
+    <p class="section-intro">
+      Same approach as always: five different reasons for property owners in Chelan and Douglas counties to raise their hand right now—from seasonal pre-winter leak checks to full architectural tear-offs and commercial flat roofs. Run each as its own Meta Instant Form campaign so we can isolate which angle delivers the lowest cost per booked estimate.
+    </p>
+
+    <!-- Concept 01 -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <span class="concept-id-tag">01 COMPLETE ROOF REPLACEMENT</span>
+        <span class="concept-name-tag">The Re-Roofing Decision</span>
+      </div>
+      <div class="concept-body">
+        <!-- Left: Meta Ad Preview -->
+        <div class="mock-phone">
+          <div class="mock-header">
+            <div class="mock-avatar">AQ</div>
+            <div>
+              <div class="mock-page-title">Apex Quality Roofing LLC</div>
+              <div class="mock-sponsored">Sponsored · 🌐</div>
+            </div>
+          </div>
+          <div class="mock-primary-text">
+            Curling shingles, granule loss, or a roof that's seen 20+ hot Wenatchee summers? Apex Quality Roofing delivers complete tear-offs and replacements built to endure heavy snow loads and valley winds.
+          </div>
+          <div class="mock-image-container">
+            <div class="mock-img-icon">🏠</div>
+            <div class="mock-img-title">Complete Roof Replacement</div>
+            <div class="mock-img-sub">Licensed · Bonded · Insured · BBB A+</div>
+          </div>
+          <div class="mock-footer">
+            <div class="mock-meta-titles">
+              <div class="mock-source">apexqualityroofingllc.com</div>
+              <div class="mock-hl">Wenatchee Valley Re-Roofing Specialists</div>
+            </div>
+            <div class="mock-btn">Get Quote</div>
+          </div>
+        </div>
+
+        <!-- Right: Specs & Strategic Notes -->
+        <div class="specs-col">
+          <div class="field-row">
+            <span class="field-label">Primary Text</span>
+            <div class="field-content">
+              Curling shingles, granule loss in your gutters, or a roof that's seen 20+ hot Wenatchee summers? Don't wait for winter freeze-thaw cycles to cause attic leaks. Apex Quality Roofing LLC provides complete, turn-key tear-offs and replacements across Wenatchee and Central Washington. Licensed, bonded, and BBB accredited—our local crews protect your property and install roofs engineered for valley weather.
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Headline</span>
+            <div class="field-content" style="font-weight: 600;">Wenatchee Valley Re-Roofing Specialists</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Description</span>
+            <div class="field-content">Free on-site estimate. Clean job sites.</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">CTA Button</span>
+            <div class="field-content"><span class="field-pill">Get Quote</span></div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Alternative Headlines</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Protect Your Home Before Winter Hits</span>
+              <span class="field-pill">Wenatchee's Trusted Roof Replacement</span>
+              <span class="field-pill">Tear-Off to Clean-Up: Done Right</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Lead Form Fields</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Full Name</span>
+              <span class="field-pill">Phone</span>
+              <span class="field-pill">Street Address / City</span>
+              <span class="field-pill">Approximate Roof Age</span>
+            </div>
+          </div>
+          <div class="why-box">
+            <span class="why-label">Why This Works</span>
+            The foundational revenue driver. Homeowners who already know their roof is nearing the end of its life don't need a gimmick; they need local credibility, reassurance on clean work, and an easy way to schedule an estimate before bad weather hits.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concept 02 -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <span class="concept-id-tag">02 17-POINT STORM & HEALTH INSPECTION</span>
+        <span class="concept-name-tag">Low-Friction Diagnostic</span>
+      </div>
+      <div class="concept-body">
+        <!-- Left: Meta Ad Preview -->
+        <div class="mock-phone">
+          <div class="mock-header">
+            <div class="mock-avatar">AQ</div>
+            <div>
+              <div class="mock-page-title">Apex Quality Roofing LLC</div>
+              <div class="mock-sponsored">Sponsored · 🌐</div>
+            </div>
+          </div>
+          <div class="mock-primary-text">
+            High winds, winter snow, and summer heat wear down valley roofs long before water stains appear on your ceiling. Book a thorough 17-Point Roof Inspection with photo documentation.
+          </div>
+          <div class="mock-image-container">
+            <div class="mock-img-icon">📋</div>
+            <div class="mock-img-title">17-Point Multi-Check Inspection</div>
+            <div class="mock-img-sub">Full Photo-Documented Condition Report</div>
+          </div>
+          <div class="mock-footer">
+            <div class="mock-meta-titles">
+              <div class="mock-source">apexqualityroofingllc.com</div>
+              <div class="mock-hl">Book a 17-Point Roof Health Check</div>
+            </div>
+            <div class="mock-btn">Book Now</div>
+          </div>
+        </div>
+
+        <!-- Right: Specs & Strategic Notes -->
+        <div class="specs-col">
+          <div class="field-row">
+            <span class="field-label">Primary Text</span>
+            <div class="field-content">
+              High winds, winter snow, and baking summer sun take a quiet toll on valley roofs long before water stains show up on your drywall. Book a comprehensive 17-Point Roof Health Inspection with Apex Quality Roofing LLC. We check flashing, boots, shingles, and ventilation to catch small issues before they become five-figure repairs. No pressure, no scare tactics—just an honest, photo-documented evaluation.
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Headline</span>
+            <div class="field-content" style="font-weight: 600;">Book a 17-Point Roof Health Check</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Description</span>
+            <div class="field-content">Serving Wenatchee, East Wenatchee & Chelan.</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">CTA Button</span>
+            <div class="field-content"><span class="field-pill">Book Now</span></div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Alternative Headlines</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Find the Hidden Leaks Before Winter</span>
+              <span class="field-pill">Honest Local Roof Condition Report</span>
+              <span class="field-pill">Know the True State of Your Roof</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Lead Form Fields</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Full Name</span>
+              <span class="field-pill">Phone</span>
+              <span class="field-pill">Property Address</span>
+              <span class="field-pill">Notice Any Active Leaks? (Yes/No)</span>
+            </div>
+          </div>
+          <div class="why-box">
+            <span class="why-label">Why This Works</span>
+            Lowest commitment hook of the five. Homeowners who hesitate to request a "quote" because they fear aggressive sales pitches are happy to accept an "inspection & report." This builds instant diagnostic trust and naturally feeds repair and replacement jobs.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concept 03 -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <span class="concept-id-tag">03 RAPID LEAK REPAIR & TUNE-UP</span>
+        <span class="concept-name-tag">High-Intent Pain Resolution</span>
+      </div>
+      <div class="concept-body">
+        <!-- Left: Meta Ad Preview -->
+        <div class="mock-phone">
+          <div class="mock-header">
+            <div class="mock-avatar">AQ</div>
+            <div>
+              <div class="mock-page-title">Apex Quality Roofing LLC</div>
+              <div class="mock-sponsored">Sponsored · 🌐</div>
+            </div>
+          </div>
+          <div class="mock-primary-text">
+            A water stain on your ceiling doesn't always mean a full replacement. Often, it's failed flashing or cracked pipe boots. We locate the leak and fix it fast.
+          </div>
+          <div class="mock-image-container">
+            <div class="mock-img-icon">🛠️</div>
+            <div class="mock-img-title">Fast Valley & Flashing Leak Repair</div>
+            <div class="mock-img-sub">Direct Office Line: (509) 630-3445</div>
+          </div>
+          <div class="mock-footer">
+            <div class="mock-meta-titles">
+              <div class="mock-source">apexqualityroofingllc.com</div>
+              <div class="mock-hl">Fast Roof Leak Repair & Diagnostics</div>
+            </div>
+            <div class="mock-btn">Get Quote</div>
+          </div>
+        </div>
+
+        <!-- Right: Specs & Strategic Notes -->
+        <div class="specs-col">
+          <div class="field-row">
+            <span class="field-label">Primary Text</span>
+            <div class="field-content">
+              A water spot on the ceiling doesn't always mean you need a brand-new roof. Often, it's failed chimney flashing, cracked pipe collar boots, or wind-damaged shingles that can be repaired the same week. Apex Quality Roofing LLC provides fast, honest leak diagnostics and repairs. We stop active leaks and protect your home without pushing replacements you don't need.
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Headline</span>
+            <div class="field-content" style="font-weight: 600;">Fast Roof Leak Repair & Diagnostics</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Description</span>
+            <div class="field-content">Wenatchee, East Wenatchee & Chelan.</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">CTA Button</span>
+            <div class="field-content"><span class="field-pill">Get Quote</span></div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Alternative Headlines</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Got an Active Leak? We Fix It Fast</span>
+              <span class="field-pill">Honest Roof Repairs, No Hard Pitch</span>
+              <span class="field-pill">Pipe Boot, Shingle & Flashing Repairs</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Lead Form Fields</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Full Name</span>
+              <span class="field-pill">Phone</span>
+              <span class="field-pill">City / Neighborhood</span>
+              <span class="field-pill">Where is the leak located?</span>
+            </div>
+          </div>
+          <div class="why-box">
+            <span class="why-label">Why This Works</span>
+            Emergency-style problem resolution. When a seasonal rainstorm or snow thaw triggers an active leak, property owners convert immediately. Presenting a straightforward repair angle builds immediate rapport and positions Apex as an honest partner.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concept 04 -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <span class="concept-id-tag">04 STANDING SEAM METAL ROOFING</span>
+        <span class="concept-name-tag">High-Ticket Durability</span>
+      </div>
+      <div class="concept-body">
+        <!-- Left: Meta Ad Preview -->
+        <div class="mock-phone">
+          <div class="mock-header">
+            <div class="mock-avatar">AQ</div>
+            <div>
+              <div class="mock-page-title">Apex Quality Roofing LLC</div>
+              <div class="mock-sponsored">Sponsored · 🌐</div>
+            </div>
+          </div>
+          <div class="mock-primary-text">
+            Tired of replacing asphalt shingles every 15-20 years? Standing seam metal roofing offers superior snow shedding, fire resistance, and 50+ year durability for Central WA homes.
+          </div>
+          <div class="mock-image-container">
+            <div class="mock-img-icon">🏔️</div>
+            <div class="mock-img-title">Standing Seam Metal Roofing</div>
+            <div class="mock-img-sub">Engineered for Leavenworth & Chelan Winters</div>
+          </div>
+          <div class="mock-footer">
+            <div class="mock-meta-titles">
+              <div class="mock-source">apexqualityroofingllc.com</div>
+              <div class="mock-hl">Upgrade to Lifetime Metal Roofing</div>
+            </div>
+            <div class="mock-btn">Learn More</div>
+          </div>
+        </div>
+
+        <!-- Right: Specs & Strategic Notes -->
+        <div class="specs-col">
+          <div class="field-row">
+            <span class="field-label">Primary Text</span>
+            <div class="field-content">
+              Tired of replacing asphalt shingles every 15 to 20 years? Standing seam metal roofing offers unmatched snow shedding, wildfire ember resistance, and an architectural look that lasts 50+ years. Apex Quality Roofing LLC fabricates and installs premium metal systems built specifically for Central Washington’s extreme seasonal swings. Ideal for mountain cabins, lake homes, and modern valley builds.
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Headline</span>
+            <div class="field-content" style="font-weight: 600;">Upgrade to Lifetime Metal Roofing</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Description</span>
+            <div class="field-content">50+ year lifespan. Maximum snow shedding.</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">CTA Button</span>
+            <div class="field-content"><span class="field-pill">Learn More</span></div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Alternative Headlines</span>
+            <div class="field-pill-group">
+              <span class="field-pill">The Last Roof Your Home Will Ever Need</span>
+              <span class="field-pill">Standing Seam Metal: Built for the Valley</span>
+              <span class="field-pill">Premium Metal Roofing in Chelan & Douglas</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Lead Form Fields</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Full Name</span>
+              <span class="field-pill">Phone</span>
+              <span class="field-pill">Property Location (Chelan, Leavenworth, etc.)</span>
+              <span class="field-pill">Project Timeframe</span>
+            </div>
+          </div>
+          <div class="why-box">
+            <span class="why-label">Why This Works</span>
+            The highest residential ticket value on the menu ($25k–$60k+). Targeting higher-equity property owners and second-home markets around Lake Chelan and Leavenworth who prioritize longevity, snow shedding, and wildfire resistance over cheap alternatives.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concept 05 -->
+    <div class="concept-card">
+      <div class="concept-header">
+        <span class="concept-id-tag">05 COMMERCIAL FLAT ROOFING & TPO</span>
+        <span class="concept-name-tag">B2B Facility Asset Protection</span>
+      </div>
+      <div class="concept-body">
+        <!-- Left: Meta Ad Preview -->
+        <div class="mock-phone">
+          <div class="mock-header">
+            <div class="mock-avatar">AQ</div>
+            <div>
+              <div class="mock-page-title">Apex Quality Roofing LLC</div>
+              <div class="mock-sponsored">Sponsored · 🌐</div>
+            </div>
+          </div>
+          <div class="mock-primary-text">
+            Commercial flat roof leaking over inventory or tenants? Apex Quality Roofing delivers commercial TPO single-ply installations and restorations across Central Washington.
+          </div>
+          <div class="mock-image-container">
+            <div class="mock-img-icon">🏢</div>
+            <div class="mock-img-title">Commercial TPO & Flat Roofing</div>
+            <div class="mock-img-sub">Warehouses · Retail · Agricultural Buildings</div>
+          </div>
+          <div class="mock-footer">
+            <div class="mock-meta-titles">
+              <div class="mock-source">apexqualityroofingllc.com</div>
+              <div class="mock-hl">Commercial Flat Roof Leak Solutions</div>
+            </div>
+            <div class="mock-btn">Get Quote</div>
+          </div>
+        </div>
+
+        <!-- Right: Specs & Strategic Notes -->
+        <div class="specs-col">
+          <div class="field-row">
+            <span class="field-label">Primary Text</span>
+            <div class="field-content">
+              A leaking commercial flat roof threatens inventory, tenant operations, and daily revenue. Apex Quality Roofing LLC installs, repairs, and restores commercial flat roofing systems across Central Washington, including heat-welded TPO single-ply membranes. Our commercial team works cleanly and efficiently to minimize business disruption while delivering energy-efficient, watertight protection.
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Headline</span>
+            <div class="field-content" style="font-weight: 600;">Commercial Flat Roof Leak Solutions</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Description</span>
+            <div class="field-content">Commercial TPO, PVC & metal roof experts.</div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">CTA Button</span>
+            <div class="field-content"><span class="field-pill">Get Quote</span></div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Alternative Headlines</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Stop Commercial Roof Leaks for Good</span>
+              <span class="field-pill">Energy-Efficient TPO Roofing Systems</span>
+              <span class="field-pill">Central WA Commercial Roofing Pros</span>
+            </div>
+          </div>
+          <div class="field-row">
+            <span class="field-label">Lead Form Fields</span>
+            <div class="field-pill-group">
+              <span class="field-pill">Contact Name & Business Name</span>
+              <span class="field-pill">Phone</span>
+              <span class="field-pill">Building Address</span>
+              <span class="field-pill">Approximate Square Footage</span>
+            </div>
+          </div>
+          <div class="why-box">
+            <span class="why-label">Why This Works</span>
+            Commercial leads carry five-to-six-figure ticket sizes. Targeting property managers, building owners, and agricultural facility operators provides massive account revenue on fewer conversions.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendations Before Launch -->
+    <div class="recs-card">
+      <div class="recs-title">
+        <span>⚙️</span> Recommendations Before We Launch
+      </div>
+      <ul class="recs-list">
+        <li class="recs-item">
+          <strong>No Special Ad Category Restrictions:</strong> Unlike real estate listings or credit offers, roofing contractor lead generation does not fall under Meta's Special Ad Categories (Housing/Credit/Employment), allowing precision radius targeting across Chelan and Douglas counties without artificial demographic restrictions.
+        </li>
+        <li class="recs-item">
+          <strong>Speed-to-Lead Automation (Under 60 Seconds):</strong> Contractor lead conversion rates decline drastically if uncontacted within 15 minutes. Connect these Meta Instant Forms directly into GoHighLevel to trigger an instant SMS confirmation to the homeowner and push-notify Samuel or the dispatch phone with a 1-tap call button.
+        </li>
+        <li class="recs-item">
+          <strong>Seasonal Creative Rhythm:</strong> Heavy push for Concept 01 (Replacements) and Concept 02 (Inspections) in late summer through fall before snow season. Shift budget toward Concept 03 (Rapid Leak Repair) during early spring freeze-thaw cycles.
+        </li>
+        <li class="recs-item">
+          <strong>Verify Direct Dispatch Number:</strong> Ensure all call extensions and ad descriptions align with the official company phone number <strong>(509) 630-3445</strong> shown on Apex's fleet trucks and website header.
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-stamp">
+      Kinetix Marketing Labs · Direct Response Campaign Architecture · Apex Quality Roofing LLC
+    </div>
+
+  </div>
+
+</body>
+</html>
