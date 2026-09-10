@@ -168,7 +168,7 @@
 
     .concept-body {
       display: grid;
-      grid-template-columns: 340px 1fr;
+      grid-template-columns: 350px 1fr;
       gap: 28px;
       padding: 24px;
     }
@@ -197,16 +197,18 @@
     }
 
     .mock-avatar {
-      width: 32px;
-      height: 32px;
-      background: #047857;
+      width: 34px;
+      height: 34px;
+      background: #064e3b;
+      border: 1.5px solid #10b981;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 11px;
-      color: #fff;
+      color: #f59e0b;
+      letter-spacing: 0.5px;
     }
 
     .mock-page-title {
@@ -228,37 +230,50 @@
       line-height: 1.4;
     }
 
-    .mock-image-container {
+    /* Real Image Wrapper */
+    .mock-image-wrapper {
+      position: relative;
       width: 100%;
-      height: 180px;
+      height: 205px;
       background: #1e242b;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
       border-top: 1px solid #2d3238;
       border-bottom: 1px solid #2d3238;
-      position: relative;
-      padding: 16px;
-      text-align: center;
     }
 
-    .mock-img-icon {
-      font-size: 24px;
-      margin-bottom: 6px;
-      opacity: 0.8;
+    .mock-ad-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
-    .mock-img-title {
-      font-weight: 700;
-      font-size: 13px;
+    .mock-ad-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(11, 15, 20, 0.88);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(245, 158, 11, 0.5);
       color: #f8fafc;
+      font-size: 9.5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      padding: 3px 7px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      z-index: 2;
     }
 
-    .mock-img-sub {
-      font-size: 11px;
-      color: var(--accent-yellow);
-      margin-top: 2px;
+    .mock-ad-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--accent-yellow);
+      border-radius: 50%;
+      display: inline-block;
     }
 
     .mock-footer {
@@ -433,9 +448,9 @@
     <h1 class="main-title">Apex Quality Roofing LLC</h1>
     <div class="subtitle-badge">Lead Gen Ad Concepts</div>
 
-    <!-- Agency Quote/Hook -->
+    <!-- Agency Hook -->
     <p class="brand-quote">
-      <strong>"Your Locally Trusted Roofing Contractor."</strong> Apex Quality Roofing LLC brings years of trusted residential and commercial roofing installation, replacement, and storm repairs to Wenatchee, Chelan, Leavenworth, Manson, and Central Washington. Fully licensed, bonded, insured, and BBB Accredited, backed by local crews who know Wenatchee Valley winters and summer heat.
+      <strong>"Your Locally Trusted Roofing Contractor."</strong> Apex Quality Roofing LLC provides full-service residential and commercial roofing solutions across Wenatchee, East Wenatchee, Chelan, Leavenworth, Manson, and Central Washington. Fully licensed, bonded, insured, and BBB Accredited, backed by local crews and proven materials engineered for valley weather.
     </p>
 
     <!-- Campaign Header Meta Bar -->
@@ -461,7 +476,7 @@
     <!-- Strategy Subheading -->
     <div class="section-headline">Five Concepts, Five Angles</div>
     <p class="section-intro">
-      Same approach as always: five different reasons for property owners in Chelan and Douglas counties to raise their hand right now—from seasonal pre-winter leak checks to full architectural tear-offs and commercial flat roofs. Run each as its own Meta Instant Form campaign so we can isolate which angle delivers the lowest cost per booked estimate.
+      Same direct-response framework as always: five distinct psychological angles for property owners across Chelan and Douglas counties to raise their hands—from seasonal pre-winter leak checks to complete architectural tear-offs and commercial flat roofs. Run each as its own Meta Instant Form campaign so we can isolate which angle delivers the lowest cost per booked estimate.
     </p>
 
     <!-- Concept 01 -->
@@ -483,10 +498,13 @@
           <div class="mock-primary-text">
             Curling shingles, granule loss, or a roof that's seen 20+ hot Wenatchee summers? Apex Quality Roofing delivers complete tear-offs and replacements built to endure heavy snow loads and valley winds.
           </div>
-          <div class="mock-image-container">
-            <div class="mock-img-icon">🏠</div>
-            <div class="mock-img-title">Complete Roof Replacement</div>
-            <div class="mock-img-sub">Licensed · Bonded · Insured · BBB A+</div>
+          <!-- Real Photo: High-Definition Architectural Shingle Roof Replacement -->
+          <div class="mock-image-wrapper">
+            <img class="mock-ad-img" 
+                 src="https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Apex Architectural Shingle Roof Replacement"
+                 onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roof_under_construction_-_panoramio.jpg/800px-Roof_under_construction_-_panoramio.jpg';">
+            <div class="mock-ad-badge">Valley Work · Full Tear-Off</div>
           </div>
           <div class="mock-footer">
             <div class="mock-meta-titles">
@@ -561,10 +579,13 @@
           <div class="mock-primary-text">
             High winds, winter snow, and summer heat wear down valley roofs long before water stains appear on your ceiling. Book a thorough 17-Point Roof Inspection with photo documentation.
           </div>
-          <div class="mock-image-container">
-            <div class="mock-img-icon">📋</div>
-            <div class="mock-img-title">17-Point Multi-Check Inspection</div>
-            <div class="mock-img-sub">Full Photo-Documented Condition Report</div>
+          <!-- Real Photo: On-Site Roofing Work Truck & Job Setup -->
+          <div class="mock-image-wrapper">
+            <img class="mock-ad-img" 
+                 src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Apex On-Site Roof Inspection Dispatch"
+                 onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Roofing_work_in_progress.jpg/800px-Roofing_work_in_progress.jpg';">
+            <div class="mock-ad-badge">Apex Fleet · On-Site Report</div>
           </div>
           <div class="mock-footer">
             <div class="mock-meta-titles">
@@ -639,10 +660,13 @@
           <div class="mock-primary-text">
             A water stain on your ceiling doesn't always mean a full replacement. Often, it's failed flashing or cracked pipe boots. We locate the leak and fix it fast.
           </div>
-          <div class="mock-image-container">
-            <div class="mock-img-icon">🛠️</div>
-            <div class="mock-img-title">Fast Valley & Flashing Leak Repair</div>
-            <div class="mock-img-sub">Direct Office Line: (509) 630-3445</div>
+          <!-- Real Photo: Close-Up Active Roofing Repair & Shingle Installation -->
+          <div class="mock-image-wrapper">
+            <img class="mock-ad-img" 
+                 src="https://images.pexels.com/photos/8961338/pexels-photo-8961338.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Apex Quality Roofing Active Leak and Flashing Repair"
+                 onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Roof_repair_work.jpg/800px-Roof_repair_work.jpg';">
+            <div class="mock-ad-badge">Direct Line: (509) 630-3445</div>
           </div>
           <div class="mock-footer">
             <div class="mock-meta-titles">
@@ -717,10 +741,13 @@
           <div class="mock-primary-text">
             Tired of replacing asphalt shingles every 15-20 years? Standing seam metal roofing offers superior snow shedding, fire resistance, and 50+ year durability for Central WA homes.
           </div>
-          <div class="mock-image-container">
-            <div class="mock-img-icon">🏔️</div>
-            <div class="mock-img-title">Standing Seam Metal Roofing</div>
-            <div class="mock-img-sub">Engineered for Leavenworth & Chelan Winters</div>
+          <!-- Real Photo: Standing Seam Metal Roof Architecture -->
+          <div class="mock-image-wrapper">
+            <img class="mock-ad-img" 
+                 src="https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Standing Seam Architectural Metal Roof Leavenworth Chelan"
+                 onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Standing_seam_metal_roof.jpg/800px-Standing_seam_metal_roof.jpg';">
+            <div class="mock-ad-badge">50+ Year Life · Cabin & Modern</div>
           </div>
           <div class="mock-footer">
             <div class="mock-meta-titles">
@@ -795,10 +822,13 @@
           <div class="mock-primary-text">
             Commercial flat roof leaking over inventory or tenants? Apex Quality Roofing delivers commercial TPO single-ply installations and restorations across Central Washington.
           </div>
-          <div class="mock-image-container">
-            <div class="mock-img-icon">🏢</div>
-            <div class="mock-img-title">Commercial TPO & Flat Roofing</div>
-            <div class="mock-img-sub">Warehouses · Retail · Agricultural Buildings</div>
+          <!-- Real Photo: Commercial White Flat TPO/PVC Roof Membrane -->
+          <div class="mock-image-wrapper">
+            <img class="mock-ad-img" 
+                 src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Apex Commercial Flat TPO Roofing Systems"
+                 onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Commercial_roof_with_HVAC.jpg/800px-Commercial_roof_with_HVAC.jpg';">
+            <div class="mock-ad-badge">Commercial TPO · Central WA</div>
           </div>
           <div class="mock-footer">
             <div class="mock-meta-titles">
